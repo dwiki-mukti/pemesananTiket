@@ -1,0 +1,27 @@
+.ftco-cover-1, .ftco-cover-1 .container > .row {
+     height: 500px; 
+     min-height: 0px; 
+}
+
+.ftco-blocks-cover-1 .ftco-service-image-1 {
+    margin-top: -150px;
+}
+
+.my-select{
+	display: flex;
+}
+.my-label{
+	color: #fff;
+	margin: 0;
+}
+.mt-m-70{
+	margin-top: -170px;
+}
+@media(max-width: 991px){
+	.username{
+		display: none;
+	}
+	.dropdown .nav-link {
+		font-size: 18px;
+	}
+}
