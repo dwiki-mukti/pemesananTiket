@@ -37,15 +37,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    
-
-    // public function rute()
-    // {
-    //     return $this->belongsToMany(new Rute)->withPivot(['kode','nomer_kursi']);
-    // }
 
         public function rute()
     {
-        return $this->belongsToMany(new Rute)->withTrashed()->withPivot(['kode','nomer_kursi'])->orderBy('deleted_at','asc');
+        return $this->belongsToMany(new Rute)->withTrashed()->withPivot(['kode','nomer_kursi','deleted_at'])->orderBy('deleted_at','asc');
     }
 }

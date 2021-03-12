@@ -4,16 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\rute_user;
 
 class PetugasController extends Controller
 {
-    private function getUser($id)
+    public function isisaldo()
     {
-        $petugas=User::where([
-            ['id','=',$id],
-            ['role','=','user']
-        ])->first();
-        return $petugas;
+        return view('petugas.saldo');
+    }
+    public function findUser(Request $request)
+    {
+        $user=User::find($request->kode);
+        return $user;
     }
     public function TopUp(Request $request,$id)
     {
@@ -22,19 +24,40 @@ class PetugasController extends Controller
         $user->save();
         return redirect()->back();
     }
-    public function checkin()
+    // ---------
+    public function checkin(Request $request)
     {
+        if (isset($request->kode)) {
+            $tiket=rute_user::where('kode','=',$request->kode)->first();
+            if ($tiket) {
+                return view('petugas.checkin',['tiket'=>$tiket]);
+            }else{
+                return redirect()->back()->with('gagal','Data Tidak di Temukan');
+            }
+        }
         return view('petugas.index');
     }
-    public function isisaldo()
+    public function used(Request $request)
     {
-        return view('petugas.saldo');
+        // dd($request->all());
+        $tiket=rute_user::where('kode','=',$request->kode)->first();
+        $tiket->delete();
+        return redirect('checkin');
     }
-    public function ajax(Request $request)
+
+
+// CRUD Petugas
+
+    private function getUser($id)
     {
-        $user=User::find($request->kode);
-        return $user;
+        $petugas=User::where([
+            ['id','=',$id],
+            ['role','=','user']
+        ])->first();
+        return $petugas;
     }
+
+
     /**
      * Display a listing of the resource.
      *

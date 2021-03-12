@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Cargo &mdash; Website Template by Colorlib</title>
+    <title>oM-Tiket</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="{{ asset('frontend/table/datatables-bs4/css/dataTables.bootstrap4.css') }}">
 
       <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}"> -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
     @yield('css')
 
@@ -53,8 +52,8 @@
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
         <div class="container">
           <div class="row align-items-center position-relative">
-            <div class="site-logo" style="position: inherit;">
-              <a href="#" class="text-black"><span class="text-primary">Cargo</a>
+            <div class="site-logo" style="position: inherit; text-transform: inherit;">
+              <a href="#" class="text-black"><span class="text-primary">oM-Tiket</a>
             </div>
             <nav class="site-navigation" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
@@ -126,38 +125,15 @@
                 <h2 class="footer-heading mb-4">About Us</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
               </div>
-              <div class="col-md-4 ml-auto">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
 
             </div>
           </div>
           <div class="col-md-4 ml-auto">
 
-            <div class="mb-5">
-              <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-              <form action="#" method="post" class="footer-suscribe-form">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
-                  </div>
-                </div>
-            </div>
-
-
             <h2 class="footer-heading mb-4">Follow Us</h2>
-            <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            <a href="https://facebook.com/arul.r.junior" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+            <a href="https://twitter.com/PooWiki" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+            <a href="https://instagram.com/dwiki_san" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
             </form>
           </div>
         </div>
@@ -166,7 +142,7 @@
             <div class="border-top pt-5">
               <p class="copyright">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by dwiki_san</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             </div>

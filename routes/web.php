@@ -35,8 +35,6 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']],function(){
 });
 
 
-
-
 // frontend
 
 Route::group(['middleware' => ['auth', 'checkRole:user,admin']],function(){
@@ -49,9 +47,12 @@ Route::group(['middleware' => ['auth', 'checkRole:user,admin']],function(){
 
 });
 
+Route::group(['middleware' => ['auth', 'checkRole:admin,petugas']],function(){
 
 	Route::get('/checkin','PetugasController@checkin')->name('checkin');
+	Route::post('/checkin','PetugasController@used');
 	Route::get('/isisaldo','PetugasController@isisaldo')->name('isisaldo');
-	Route::post('/isisaldo','PetugasController@ajax');
+	Route::post('/isisaldo','PetugasController@findUser');
 	Route::put('/isisaldo/{id}','PetugasController@TopUp');
 
+});

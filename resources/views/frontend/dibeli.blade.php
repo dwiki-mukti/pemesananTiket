@@ -6,7 +6,7 @@
 	<div class="container">
 
     @foreach($users->rute as $rute)
-		<div class="card mt-2 {{$rute->deleted_at ? 'terpakai' : ''}}">
+		<div class="card mt-2 {{$rute->pivot->deleted_at ? 'terpakai' : ''}}">
 			<div class="card-body"> 
         <div class="row px-5">
           <div class="col-md-5 mt-1">

@@ -35,7 +35,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
             <div class="container">
-                <span class="navbar-brand">
+                <span class="navbar-brand" style="color: #ff8b00!important; font-weight: 900;">
                     oM-tiket
                 </span>
                 <div class="d-flex">
